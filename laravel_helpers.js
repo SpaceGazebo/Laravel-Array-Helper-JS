@@ -1,3 +1,6 @@
+/**
+ *  replicated array_dot feature from laravel
+ */
 function array_dot(i, p){
     var o = {};p = p || '';
     
