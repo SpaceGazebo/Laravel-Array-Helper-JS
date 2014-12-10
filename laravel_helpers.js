@@ -1,4 +1,30 @@
 /**
+ *  replicated array_get feature from laravel
+ */
+function array_get(i,k,d)
+{
+    d = d||null;
+    if (!k) return i;
+    
+    var s = k.split('.');
+    
+    var o = i;
+    
+    for(var x=0;x < s.length; x++)
+    {
+        if (o.hasOwnProperty(s[x]))
+        {
+            o = o[s[x]];
+        }
+        else
+        {
+            return d;
+        }
+    }
+    
+    return o;
+}
+/**
  *  replicated array_dot feature from laravel
  */
 function array_dot(i, p){
