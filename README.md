@@ -28,3 +28,11 @@ TODO:
  * array_set
  * array_sort
  * array_where
+
+Bower
+=======================
+
+Add this to your ``bower.json`` file:
+```
+    "sg-laravel-array-helpers":"git://github.com/SpaceGazebo/Laravel-Array-Helper-JS"
+```
