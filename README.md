@@ -1,6 +1,8 @@
 Laravel-Array-Helper-JS
 =======================
 
+Contributers and Javascript Experts are welcome
+
 Javascript equivalent of Laravel's PHP Array Helpers
 
 http://laravel.com/docs/4.2/helpers
