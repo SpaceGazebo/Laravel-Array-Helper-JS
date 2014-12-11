@@ -1,5 +1,5 @@
 /**
- *  replicated array_get feature from laravel
+ *  replicates array_get feature from laravel
  */
 function array_get(i,k,d)
 {
@@ -25,7 +25,35 @@ function array_get(i,k,d)
     return o;
 }
 /**
- *  replicated array_dot feature from laravel
+ *  replicates array_set feature from laravel
+ */
+function array_set(i,k,v)
+{
+    if (!k) return;
+    var s = k.split('.');
+    h = i;
+    for(var x=0;x < s.length-1; x++)
+    {
+        if (h.hasOwnProperty(s[x]))
+        {
+            h = h[s[x]];
+        }
+        else
+        {
+            for(var y = s.length-1;x <= y; y--)
+            {
+                w = v;
+                v = {};
+                v[s[y]] = w;
+            }
+            h[s[x]] = v[s[x]];
+            return;
+        }
+    }
+    h[s[x]] = v;
+}
+/**
+ *  replicates array_dot feature from laravel
  */
 function array_dot(i, p){
     var o = {};p = p || '';
@@ -56,7 +84,7 @@ function array_dot(i, p){
     return o;
 }
 /**
- *  replicated array_dot feature from laravel
+ *  replicates array_dot feature from laravel
  */
 function array_flatten(i)
 {
