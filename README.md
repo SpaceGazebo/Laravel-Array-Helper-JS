@@ -10,6 +10,9 @@ Done and Quality Tested:
 
 Written:
  * array_dot
+ * array_get
+ * array_set
+ * array_flatten
  
 TODO:
  * array_add
@@ -19,13 +22,13 @@ TODO:
  * array_fetch
  * array_first
  * array_last
- * array_flatten
+ * ~~array_flatten~~
  * array_forget
- * array_get
+ * ~~array_get~~
  * array_only
  * array_pluck
  * array_pull
- * array_set
+ * ~~array_set~~
  * array_sort
  * array_where
 
