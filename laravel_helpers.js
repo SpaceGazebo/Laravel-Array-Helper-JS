@@ -114,7 +114,7 @@ function array_flatten(i)
  {
     if (!f && a.length)
     {
-        return a.[0];
+        return a[0];
     }
     for(var x = 0; x < a.length; x++)
     {
