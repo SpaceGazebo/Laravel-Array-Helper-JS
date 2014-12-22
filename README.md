@@ -15,6 +15,7 @@ Written:
  * array_get
  * array_set
  * array_flatten
+ * array_first
  
 TODO:
  * array_add
@@ -22,7 +23,7 @@ TODO:
  * ~~array_dot~~
  * array_except
  * array_fetch
- * array_first
+ * ~~array_first~~
  * array_last
  * ~~array_flatten~~
  * array_forget
