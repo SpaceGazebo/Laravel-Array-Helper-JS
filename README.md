@@ -16,19 +16,21 @@ Written:
  * array_set
  * array_flatten
  * array_first
+ * array_only
+ * array_except
  
 TODO:
  * array_add
  * array_divide
  * ~~array_dot~~
- * array_except
+ * ~~array_except~~
  * array_fetch
  * ~~array_first~~
  * array_last
  * ~~array_flatten~~
  * array_forget
  * ~~array_get~~
- * array_only
+ * ~~array_only~~
  * array_pluck
  * array_pull
  * ~~array_set~~
