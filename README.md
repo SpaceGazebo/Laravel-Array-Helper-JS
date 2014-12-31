@@ -17,7 +17,7 @@ Written:
  * array_flatten
  * array_first
  * array_only ``<-- requires jQuery``
- * array_except
+ * array_except ``<-- requires jQuery``
  
 TODO:
  * array_add
