@@ -110,8 +110,8 @@ function array_flatten(i)
 /**
  *  replicates array_first feature from laravel
  */
- function array_first(a,f,d)
- {
+function array_first(a,f,d)
+{
     if (!f && a.length)
     {
         return a[0];
@@ -121,4 +121,33 @@ function array_flatten(i)
         if (f(a[x])) return a[x];
     }
     return d;
- }
+}
+/**
+ *  replicates array_except feature from laravel
+ */
+function array_except(a,ks){
+  /**
+   *  does not account for array_dot sub-keys
+   */
+  var b = jQuery.extend(true, {}, a);
+  ks.forEach(function(k){
+    delete b[k];
+  });
+  return b;
+}
+/**
+ *  replicates array_only feature from laravel
+ */
+function array_only(a,ks){
+  /**
+   *  does not account for array_dot sub-keys
+   */
+  var b = jQuery.extend(true, {}, a);
+  
+  for(var k in a)
+  {
+      if (ks.indexOf(k) === -1) delete b[k];
+  }
+  
+  return b;
+}
