@@ -16,7 +16,7 @@ Written:
  * array_set
  * array_flatten
  * array_first
- * array_only
+ * array_only ``<-- requires jQuery``
  * array_except
  
 TODO:
