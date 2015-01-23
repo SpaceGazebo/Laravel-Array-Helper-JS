@@ -1,5 +1,9 @@
 {
   "name": "SpaceGazebo/Laravel-Array-Helper-JS",
+  "main": [
+    "laravel_helpers.js",
+    "spacegazebo_helpers.js"
+  ],
   "ignore": [
   ]
 }
