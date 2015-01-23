@@ -18,13 +18,15 @@ Written:
  * array_first
  * array_only ``<-- requires jQuery``
  * array_except ``<-- requires jQuery``
+ * array_fetch
+ * array_has
  
 TODO:
  * array_add
  * array_divide
  * ~~array_dot~~
  * ~~array_except~~
- * array_fetch
+ * ~~array_fetch~~
  * ~~array_first~~
  * array_last
  * ~~array_flatten~~
