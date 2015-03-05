@@ -112,7 +112,7 @@ function money2DecimalArr(str){
     if (typeof str == 'number' && isNaN(str)){ return str; }
     
     //var decimal_pos = Math.max(str.lastIndexOf('.'),str.lastIndexOf(','));
-    var decimal_pos = (str.lastIndexOf('.');
+    var decimal_pos = str.lastIndexOf('.');
     
     if (decimal_pos==-1) decimal_pos = str.length;
     
