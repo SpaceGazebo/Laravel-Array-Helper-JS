@@ -12,7 +12,7 @@ function array_get(i,k,d)
     
     for(var x=0;x < s.length; x++)
     {
-        if (o.hasOwnProperty(s[x]))
+        if (null !== o && o.hasOwnProperty(s[x]))
         {
             o = o[s[x]];
         }
