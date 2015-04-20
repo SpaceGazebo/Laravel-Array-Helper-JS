@@ -14,7 +14,7 @@ function array_get(i,k,d)
     {
         if (o.hasOwnProperty(s[x]))
         {
-            o = o[s[x]];
+            o = o[s[x]]||{};
         }
         else
         {
