@@ -3,7 +3,7 @@
  */
 function array_get(i,k,d)
 {
-    d = d||null;
+    if (typeof d === 'undefined') { d = null; }
     if (!k) return i;
     
     var s = k.split('.');
