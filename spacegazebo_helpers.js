@@ -61,6 +61,7 @@ function assoc_diff (a,b)
  *  does not validate arrangements of $,space,comma,period, only strips them
  */
 function money2DecimalString(m){
+    if (typeof m === 'undefined') return NaN;
     var v;
     var p = m;
     if (typeof p == 'string')
