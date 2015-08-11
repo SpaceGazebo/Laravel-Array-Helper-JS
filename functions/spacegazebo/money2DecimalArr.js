@@ -15,8 +15,8 @@ function money2DecimalArr(str){
     if (decimal_pos==-1) decimal_pos = str.length;
     
     var num = {
-    left:str.substr(0,decimal_pos).replace(/[^0-9]+/g,""),
-    right:str.substr(decimal_pos+1,str.length).replace(/[^0-9]+/g,""),
+        left:str.substr(0,decimal_pos).replace(/[^0-9]+/g,""),
+        right:str.substr(decimal_pos+1,str.length).replace(/[^0-9]+/g,""),
         source:str
     };
 
