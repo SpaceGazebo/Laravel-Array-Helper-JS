@@ -29,6 +29,11 @@ function money2DecimalArr(str){
     {
         num.invalid = true;
     }
+    
+    if (num.left.length > 15)
+    {
+        num.invalid = true;
+    }
 
     return num;
 }
