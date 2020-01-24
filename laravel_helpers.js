@@ -176,6 +176,6 @@ function array_fetch (arr,key)
  */
 function array_has (arr,key)
 {
-    return (array_get(arr,key,false)!==false && array_get(arr,key,true)!==true);
+    return !(array_get(arr,key,false)===false && array_get(arr,key,true)===true);
 }
 
